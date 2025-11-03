@@ -18,7 +18,7 @@ def get_connection():
             password=result.password,
             host=result.hostname,
             port=result.port,
-            sslmode="require" 
+            sslmode="require",
             cursor_factory=psycopg2.extras.DictCursor  # ✅ fixed comma
         )
         print("🔗 Connected to PostgreSQL database")
